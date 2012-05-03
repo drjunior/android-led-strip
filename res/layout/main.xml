@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#aaa"
+    android:orientation="vertical" >
+
+    <HorizontalScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="20dp" >
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <View
+        android:id="@+id/red"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/scrollview"
+        android:layout_margin="25dp"
+        android:background="#f00"
+        android:onClick="onClickColor" />
+
+    <View
+        android:id="@+id/green"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/scrollview"
+        android:layout_margin="25dp"
+        android:layout_toRightOf="@id/red"
+        android:background="#0f0"
+        android:onClick="onClickColor" />
+
+    <View
+        android:id="@+id/blue"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/scrollview"
+        android:layout_margin="25dp"
+        android:layout_toRightOf="@id/green"
+        android:background="#00f"
+        android:onClick="onClickColor" />
+
+    <View
+        android:id="@+id/white"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/scrollview"
+        android:layout_margin="25dp"
+        android:layout_toRightOf="@id/blue"
+        android:background="#fff"
+        android:onClick="onClickColor" />
+
+    <View
+        android:id="@+id/black"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/scrollview"
+        android:layout_margin="25dp"
+        android:layout_toRightOf="@id/white"
+        android:background="#000"
+        android:onClick="onClickColor" />
+
+</RelativeLayout>
