@@ -1,6 +1,3 @@
-Android Led Strip by drjunior
-===============
-
 This is an Android application that uses the IOIO board (http://www.sparkfun.com/products/10748) to connect to a RGB led
 strip (http://www.sparkfun.com/products/10312). The application has some cool effects and use the smartphone sensors
 to change the "behavior" of the leds.
